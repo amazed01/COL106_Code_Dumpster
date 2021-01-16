@@ -1,0 +1,19 @@
+Assignment 1.3
+
+        A1List
+
+   1.3(a) :: WORST CASE TIME COMPLEXITIES
+
+        Insert		O(1)  { Insert the element in the DLL after the current node takes constant steps }
+        Delete		O(n)  { Search for the block to be deleted can take O(n) steps in worst case }
+        Find		O(n)  { Search for the block can take O(n) steps in worst case }
+        getFirst	O(n)  { Traversal to head may take O(n) steps in worst case }
+        getNext		O(1)  { Return next element takes constant steps }
+        sanity		O(n)  { Checks validity for all elements take }
+
+        A1DynamicMem
+
+   1.3(b) :: WORST CASE TIME COMPLEXITIES
+
+        Allocate	    O(n)  { Uses .Find operation for searching for memory size in freeblk }
+        Free		    O(n)  { Uses .Find operation for searching for startaddr in allocblk }
